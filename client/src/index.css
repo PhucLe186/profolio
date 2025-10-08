@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+html, body {
+  font-family: 'Times New Roman', monospace;
+  background-color: #000;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;            
+}
+
+

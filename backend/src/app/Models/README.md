@@ -1,0 +1,3 @@
+- **Models** chịu trách nhiệm thao tác trực tiếp với `database (Firebase, MySQL, MongoDB, ...)`.
+- Chỉ tập trung vào **CRUD** (Create, Read, Update, Delete).
+- Không xử lý logic nghiệp vụ.
