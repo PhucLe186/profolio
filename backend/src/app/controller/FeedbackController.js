@@ -12,11 +12,11 @@ const transporter = nodemailer.createTransport({
 });
 class FeedbackController{
     async fetchData(req, res) {  
-    const Data = await FeedBack.Feedback(); 
-    if(!Data) {
-        return res.status(200).json({ success: false ,message: 'không có dữ liệu' });
-    }
-    return res.status(200).json({ success: true ,message: Data });   
+        const Data = await FeedBack.Feedback(); 
+        if(!Data) {
+            return res.status(200).json({ success: false ,message: 'không có dữ liệu' });
+        }
+        return res.status(200).json({ success: true ,message: Data });   
 }
 /////////////////////////////////////////
     async sendData(req, res) {

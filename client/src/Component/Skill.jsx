@@ -1,12 +1,13 @@
 import skillData from "@/Data/SkillData";
 import { useState } from "react";
-import Tippy from '@tippyjs/react';
 import Swal from "sweetalert2";
 
 
 function Skill() {
     //--xử lý sự dữ liệu--//
+    const API_URL = import.meta.env.VITE_API_URL;
     const [isActive, setIsActive]= useState('Frontend')
+    const [data, setData]= useState([])
     const [currentPage, setCurrentPage] = useState(1);
     const skillsPerPage = 6;
 
@@ -30,23 +31,23 @@ function Skill() {
         setCurrentPage(1)
         setIsActive(value)
     }
+    
     const Clickitem= ()=> {
         Swal.fire({
-                icon: 'error',
-                title: 'Function Not Ready Yet!',
-                text: "I’m Very Sorry!This feature is still under construction. Please return later!",
-                background: '#0b0b16', 
-                color: '#e0e0ff', 
-                confirmButtonText: 'Return to Earth',
-                confirmButtonColor: '#7C3AED',
-                customClass: {
-                    popup: 'rounded-2xl shadow-[0_0_25px_#7C3AED55]',
-                    title: 'text-purple-400 font-bold',
-                    confirmButton: 'text-white font-medium px-6 py-2 rounded-lg bg-gradient-to-r from-purple-700 to-indigo-600 hover:from-purple-600 hover:to-indigo-500',
-                },
-            });
+            icon: 'error',
+            title: 'Function Not Ready Yet!',
+            text: "I’m Very Sorry!This feature is still under construction. Please return later!",
+            background: '#0b0b16', 
+            color: '#e0e0ff', 
+            confirmButtonText: 'Return to Earth',
+            confirmButtonColor: '#7C3AED',
+            customClass: {
+                popup: 'rounded-2xl shadow-[0_0_25px_#7C3AED55]',
+                title: 'text-purple-400 font-bold',
+                confirmButton: 'text-white font-medium px-6 py-2 rounded-lg bg-gradient-to-r from-purple-700 to-indigo-600 hover:from-purple-600 hover:to-indigo-500',
+            },
+        });
     }
-    
     return (
         <section id="skills" className="min-h-screen pt-12" >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" >
@@ -68,14 +69,15 @@ function Skill() {
                     ))}
             </div>
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-4 gap-6">
-                {currentSkills.map((skill,idx)=> (
+                {currentSkills.map((skill,idx)=>(
+
                     <div 
                         onClick={()=>Clickitem()}
                         key={idx}
                         className="bg-black/40 border border-white/20 rounded-2xl shadow-lg p-6 hover:shadow-cyan-400/50 hover:-translate-y-1 transition-all flex flex-col items-center min-h-[201px]"
                     >
                         <div className="w-16 h-16 flex items-center justify-center rounded-full bg-white/10 mb-4">
-                             {skill.icon}
+                            {skill.icon}
                         </div>
                         <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2 text-center">{skill.name}</h3>
                         <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 text-center">

@@ -1,34 +1,48 @@
 import projactData from "@/Data/ProjectData";
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import Swal from 'sweetalert2';
+
 function Project() {
+
     const [isActive,SetisActive ]= useState('all')
-    const filteredProjects= isActive==='all'? projactData.projects: projactData.projects.filter(item =>item.type.toLowerCase()===isActive.toLowerCase())
+    const [data, setData]= useState([])
+    const API_URL = import.meta.env.VITE_API_URL;
+    const filteredProjects= isActive==='all'? data: data.filter(item =>item.type.toLowerCase()===isActive.toLowerCase())
     const tabData=[
-            { value: "all", label: "All Projects", icon: "bx bx-grid-alt" },
-            { value: "frontend", label: "Frontend", icon: "bx bx-desktop" },
-            { value: "backend", label: "Backend", icon: "bx bx-server" },
-            { value: "fullstack", label: "Fullstack", icon: "bx bx-code-alt" },
-        ]
+        { value: "all", label: "All Projects", icon: "bx bx-grid-alt" },
+        { value: "frontend", label: "Frontend", icon: "bx bx-desktop" },
+        { value: "backend", label: "Backend", icon: "bx bx-server" },
+        { value: "fullstack", label: "Fullstack", icon: "bx bx-code-alt" },
+    ]
         ///////////////////////////////////////////
     const handleClick =(value)=> {
         SetisActive(value)
     }
+    useEffect(()=> {
+        const FetchProjectData= async()=> {
+            const res= await axios.get(`${API_URL}data/project`)
+            if(res.data.success) {
+                setData(res.data.message)
+            }
+        }
+        FetchProjectData()
+    },[])
     const ProjectClick =() => {
         Swal.fire({
-              icon: 'success',
-              title: 'Mission Complete!',
-              text: "I’m Very Sorry!This feature is still under construction. Please return later!",
-              background: '#0b0b16', 
-              color: '#e0e0ff', 
-              confirmButtonText: 'Return to Earth',
-              confirmButtonColor: '#7C3AED',
-              customClass: {
+            icon: 'error',
+            title: 'Function Not Ready Yet!',
+            text: "I’m Very Sorry!This feature is still under construction. Please return later!",
+            background: '#0b0b16', 
+            color: '#e0e0ff', 
+            confirmButtonText: 'Return to Earth',
+            confirmButtonColor: '#7C3AED',
+            customClass: {
                 popup: 'rounded-2xl shadow-[0_0_25px_#7C3AED55]',
                 title: 'text-purple-400 font-bold',
                 confirmButton: 'text-white font-medium px-6 py-2 rounded-lg bg-gradient-to-r from-purple-700 to-indigo-600 hover:from-purple-600 hover:to-indigo-500',
-              },
-                });   
+            },
+        });   
     }
     return (
         <section id="projects" className="min-h-screen pt-12">
@@ -45,7 +59,7 @@ function Project() {
                         ? "bg-gray-800 text-white dark:bg-white dark:text-gray-800"
                         : "bg-transparent text-gray-800 dark:text-white border border-white"
                         }`} >
-                            {item.value}
+                            {item.label}
                         </button>
                     ))}
                 </div>
@@ -56,7 +70,7 @@ function Project() {
                                 <img src={project.image} alt={project.title} className="w-full h-full object-cover"/>
                                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
                                     <a onClick={ProjectClick} className="px-4 py-2 bg-white text-black rounded-full font-bold mr-3">Demo</a>
-                                    <a href={project.github} className="px-4 py-2 border-2 border-white text-white rounded-full font-bold">Code</a>
+                                    <a href={project.github} target="_blank" className="px-4 py-2 border-2 border-white text-white rounded-full font-bold">Code</a>
                                 </div>
                             </div>
                             <div className="p-6">
@@ -86,7 +100,6 @@ function Project() {
                         </div>
                     ))}
                 </div>
-
             </div>
         </section> )
 }

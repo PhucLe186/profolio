@@ -13,7 +13,9 @@ function Home() {
 
     return () => clearTimeout(timeout);
     }, []);
-   
+    const handleClick=()=> {
+        window.open("/assets/Le-Hoang-Phuc-TopCV.vn-121025.212624.pdf")
+    }
     return (   
         <section id='home' className="pt-20 min-h-screen relative overflow-hidden">
             <div className=" absolute inset-0 -z-10">
@@ -57,7 +59,7 @@ function Home() {
                                 <a href="#projects" className="px-6 py-3 bg-white text-black rounded-full font-bold hover:bg-gray-200 transition duration-300">
                                     View My Work
                                 </a>
-                                <a href="#contact" className="px-6 py-3 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-black transition duration-300">
+                                <a href="#contact" onClick={handleClick} className="px-6 py-3 border-2 border-white text-white rounded-full font-bold hover:bg-white hover:text-black transition duration-300">
                                     Download My CV
                                 </a>
                             </div>

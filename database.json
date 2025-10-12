@@ -1,0 +1,291 @@
+{
+  "categories": [
+    {
+      "skills": [
+        {
+          "style": "text-orange-500 text-5xl",
+          "icon": "FaHtml5",
+          "level": "Intermediate",
+          "name": "HTML"
+        },
+        {
+          "style": "text-blue-500 text-5xl",
+          "icon": "FaCss3Alt",
+          "level": "Intermediate",
+          "name": "CSS"
+        },
+        {
+          "style": "text-yellow-400 text-5xl",
+          "icon": "FaJsSquare",
+          "level": "Advanced",
+          "name": "JavaScript"
+        },
+        {
+          "style": "text-red-500 text-5xl",
+          "icon": "FaJava",
+          "level": "Intermediate",
+          "name": "Java"
+        },
+        {
+          "style": "text-cyan-400 text-5xl",
+          "icon": "FaReact",
+          "level": "Advanced",
+          "name": "React"
+        },
+        {
+          "style": "text-sky-400 text-5xl",
+          "icon": "SiTailwindcss",
+          "level": "Advanced",
+          "name": "Tailwind CSS"
+        },
+        {
+          "style": "text-purple-500 text-3xl",
+          "icon": "SiVite",
+          "level": "Intermediate",
+          "name": "Vite"
+        }
+      ],
+      "title": "Frontend"
+    },
+    {
+      "skills": [
+        {
+          "style": "text-green-500 text-3xl",
+          "icon": "FaNodeJs",
+          "level": "Intermediate",
+          "name": "Node.js"
+        },
+        {
+          "style": "text-blue-400 text-3xl",
+          "icon": "FaPython",
+          "level": "Basic",
+          "name": "Python"
+        },
+        {
+          "style": "text-gray-500 text-3xl",
+          "icon": "SiExpress",
+          "level": "Intermediate",
+          "name": "Express.js"
+        },
+        {
+          "style": "text-yellow-500 text-3xl",
+          "icon": "SiFirebase",
+          "level": "Intermediate",
+          "name": "Firebase"
+        },
+        {
+          "style": "text-blue-600 text-3xl",
+          "icon": "SiMysql",
+          "level": "Intermediate",
+          "name": "MySQL"
+        },
+        {
+          "style": "text-green-600 text-3xl",
+          "icon": "SiMongodb",
+          "level": "Basic",
+          "name": "MongoDB"
+        },
+        {
+          "style": "text-gray-700 dark:text-white text-3xl",
+          "icon": "SiSocketdotio",
+          "level": "Basic",
+          "name": "Socket.IO"
+        }
+      ],
+      "title": "Backend"
+    },
+    {
+      "skills": [
+        {
+          "style": "text-orange-500 text-3xl",
+          "icon": "SiTensorflow",
+          "level": "Basic",
+          "name": "TensorFlow"
+        },
+        {
+          "style": "text-blue-500 text-3xl",
+          "icon": "SiOpencv",
+          "level": "Basic",
+          "name": "OpenCV"
+        },
+        {
+          "style": "text-blue-500 text-3xl",
+          "icon": "FaPython",
+          "level": "Basic",
+          "name": "Python"
+        }
+      ],
+      "title": "AI/ML & Tools"
+    },
+    {
+      "skills": [
+        {
+          "style": "text-red-500 text-3xl",
+          "icon": "FaGitAlt",
+          "level": "Intermediate",
+          "name": "Git"
+        },
+        {
+          "style": "text-gray-800 dark:text-white text-3xl",
+          "icon": "FaGithub",
+          "level": "Intermediate",
+          "name": "GitHub"
+        },
+        {
+          "style": "text-orange-500 text-3xl",
+          "icon": "SiPostman",
+          "level": "Intermediate",
+          "name": "Postman"
+        },
+        {
+          "style": "text-blue-400 text-3xl",
+          "icon": "FaDocker",
+          "level": "Basic",
+          "name": "Docker"
+        },
+        {
+          "style": "text-gray-700 text-3xl",
+          "icon": "SiLinux",
+          "level": "Basic",
+          "name": "Linux"
+        }
+      ],
+      "title": "Other Tools"
+    },
+    {
+      "skills": [
+        {
+          "style": "text-blue-400 text-5xl",
+          "icon": "FaGlobe",
+          "level": "Basic",
+          "name": "HTTP/HTTPS"
+        },
+        {
+          "style": "text-green-400 text-5xl",
+          "icon": "FaNetworkWired",
+          "level": "Basic",
+          "name": "DNS"
+        },
+        {
+          "style": "text-yellow-400 text-5xl",
+          "icon": "FaHashtag",
+          "level": "Basic",
+          "name": "IP"
+        },
+        {
+          "style": "text-red-500 text-5xl",
+          "icon": "FaShieldAlt",
+          "level": "Basic",
+          "name": "Firewall"
+        },
+        {
+          "style": "text-purple-400 text-5xl",
+          "icon": "FaExchangeAlt",
+          "level": "Basic",
+          "name": "TCP/IP Model"
+        },
+        {
+          "style": "text-cyan-400 text-5xl",
+          "icon": "FaLayerGroup",
+          "level": "Basic",
+          "name": "OSI Model"
+        },
+        {
+          "style": "text-sky-400 text-5xl",
+          "icon": "SiWireshark",
+          "level": "Basic",
+          "name": "Wireshark"
+        }
+      ],
+      "title": "Networking"
+    }
+  ],
+  "testimonials": {
+    "-ObJ47m768ANl_uKSPYs": {
+      "avata": "https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg",
+      "content": "giỏi quá",
+      "createdAt": "2025-10-11T16:22:20.569Z",
+      "email": "hoangphuckaito1806@gmail.com",
+      "name": "Văn Chí Sến",
+      "position": "Engineer",
+      "rating": 5
+    }
+  },
+  "projects": [
+  {
+    "image": "https://res.cloudinary.com/dmfye1o7a/image/upload/v1760260065/Jobconnect4student_eyae45.jpg",
+    "title": "JobConect4student",
+    "type": "Backend",
+    "features": ["In Progress", "In Progress", "In Progress", "In Progress"],
+    "tech": ["React", "MongoDB", "Nest.Js", "Python"],
+    "year": 2024,
+    "status": "In Progress",
+    "demo": null,
+    "github": "https://github.com/PhucLe186/JobConect4Student.git"
+  },
+  {
+    "image": "https://res.cloudinary.com/dmfye1o7a/image/upload/v1760260067/tiktokapp_bsfrym.webp",
+    "title": "Clone tiktok app",
+    "type": "Fullstack",
+    "features": [
+      "Realtime chat messaging",
+      "User profile page",
+      "Home flow navigation",
+      "UI customization / settings"
+    ],
+    "tech": ["React.Js", "MySql", "Node.Js", "Cloudinary"],
+    "year": 2025,
+    "status": "Completed",
+    "demo": null,
+    "github": "https://github.com/PhucLe186/Mobile.git"
+  },
+  {
+    "image": "https://res.cloudinary.com/dmfye1o7a/image/upload/v1760260066/restaurant_dif2rz.png",
+    "title": "Restaurant management",
+    "type": "Fullstack",
+    "features": [
+      "Authentication (Login/Register)",
+      "Cart system (Add/Remove items)",
+      "Statistics dashboard",
+      "Online table booking"
+    ],
+    "tech": ["React.Js", "Firebase", "Node.Js", "Cloudinary"],
+    "year": 2024,
+    "status": "Completed",
+    "demo": null,
+    "github": "https://github.com/PhucLe186/Restaurant_G7.git"
+  },
+  {
+    "image": "https://res.cloudinary.com/dmfye1o7a/image/upload/v1760260066/face_zm5pc7.png",
+    "title": "Face Recognition",
+    "type": "Fullstack",
+    "features": [
+      "UI customization / settings",
+      "Connect to database",
+      "Fix bugs",
+      "Train model"
+    ],
+    "tech": ["Python", "MySql"],
+    "year": 2024,
+    "status": "Completed",
+    "demo": null,
+    "github": "https://github.com/PhucLe186/Face_Recognition1-.git"
+  },
+  {
+    "image": "https://res.cloudinary.com/dmfye1o7a/image/upload/v1760260065/profile_ujbmsy.png",
+    "title": "Personal Portfolio",
+    "type": "Frontend",
+    "features": [
+      "UI customization",
+      "Project & skill showcase",
+      "Connect API",
+      "Animated tabs"
+    ],
+    "tech": ["React vite", "Taiwin css", "Node.js", "Firebase"],
+    "year": 2025,
+    "status": "Completed",
+    "demo": null,
+    "github": "https://github.com/PhucLe186/profolio.git"
+  }
+]
+}
